@@ -103,7 +103,7 @@ const mostrarDatos = (data) => {
   if (proViento >= 3 && proViento < 25 && protemp >= 25 && protemp <= 30){
     recomendables += "Te recomiendo central eolica"
   }
-  body += `<tr><td>${protemp.toFixed(2) + "Â°C"}</td><td>${proHorasSol}</td><td>${proViento.toFixed(2) + "m/s"}</td><td>${proNubes.toFixed(2) + "%"}</td><td>${recomendables}</td></tr>`
+  body += `<tr><td>${protemp.toFixed(2) + "°C"}</td><td>${proHorasSol}</td><td>${proViento.toFixed(2) + "m/s"}</td><td>${proNubes.toFixed(2) + "%"}</td><td>${recomendables}</td></tr>`
   document.getElementById('datos').innerHTML = body
 }
 
